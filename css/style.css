@@ -10,23 +10,38 @@ html, body {
     padding: 3px;
 }
 
+section{
+    margin: 0 ;
+}
+
+h1{
+    text-align: center;
+}
+
 body {
     background: #e1edec;
 }
 
-table, th, td{
-    border: 1px solid black;
+table {
+    border: 1px solid #888888;
+    width: 100%;
+    margin: 5px;
 }
 
-fieldset{
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+fieldset {
     border: 0;
 }
 
-#input{
-    display:none;
+#inputField {
+    display: none;
     background: white;
-    position:absolute;
-    margin:auto;
-    width:400px;
+    position: fixed;
+    margin: 0 auto;
+    width: 400px;
     box-shadow: 10px 10px 5px #888888;
 }

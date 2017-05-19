@@ -15,12 +15,12 @@
         </div>
     </header>
     <section>
-        <div>
-            <input type="button" value="Add" id="add"/>
+        <div id="topelement">
+            <input type="button" value="Add" id="add" onclick="showInputField()"/>
             <input type="button" value="Edit" id="edit" onclick="myCreateFunction()"/>
         </div>
 
-        <div id="input">
+        <div id="inputField">
             <fieldset>
                 <legend>First Name</legend>
                 <input type="text" id="firstName"/>
@@ -33,10 +33,12 @@
                 <legend>Date of Birth</legend>
                 <input type="text" id="dob"/>
             </fieldset>
+            <fieldset>
+                <input type="button" value="addUser" id="addUser" onclick="addUser()"/>
+            </fieldset>
         </div>
         <table id="userTable">
             <tr>
-                <td>Sr No.</td>
                 <td>First Name</td>
                 <td>Last Name</td>
                 <td>Date of Birth</td>
