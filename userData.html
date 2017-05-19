@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Data</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="container">
+
+
+    <header>
+        <div id="headLeft">
+            <h1>User Data</h1>
+        </div>
+    </header>
+    <section>
+        <div>
+            <input type="button" value="Add" id="add"/>
+            <input type="button" value="Edit" id="edit" onclick="myCreateFunction()"/>
+        </div>
+
+        <div id="input">
+            <fieldset>
+                <legend>First Name</legend>
+                <input type="text" id="firstName"/>
+            </fieldset>
+            <fieldset>
+                <legend>Last Name</legend>
+                <input type="text" id="lastName"/>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Birth</legend>
+                <input type="text" id="dob"/>
+            </fieldset>
+        </div>
+        <table id="userTable">
+            <tr>
+                <td>Sr No.</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Date of Birth</td>
+            </tr>
+        </table>
+
+        <p id="para">this is where text will come</p>
+
+
+    </section>
+    <footer>
+        GrevilLopes&copy;
+    </footer>
+
+    <script type="text/javascript" src="js/userData.js"></script>
+
+</div>
+</body>
+</html>

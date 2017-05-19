@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 989px;
+    margin: 0 auto;
+    background: white;
+    padding: 3px;
+}
+
+body {
+    background: #e1edec;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+fieldset{
+    border: 0;
+}
+
+#input{
+    display:none;
+    background: white;
+    position:absolute;
+    margin:auto;
+    width:400px;
+    box-shadow: 10px 10px 5px #888888;
+}
