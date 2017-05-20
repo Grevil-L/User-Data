@@ -6,26 +6,28 @@ var firstName;
 var lastName;
 var dob;
 // var user = {firstName: firstName, lastName: lastName, dob: dob};
-var user = {};
+
 // var allUsers = [user];
 var allUsers = [];
 
 function updateUser() {
+    var user = {};
     user.firstName = firstName;
     user.lastName = lastName;
     user.dob = dob;
-};
-
-function updateAllUsers() {
     allUsers.push(user);
 };
+
+// function updateAllUsers() {
+//     allUsers.push(user);
+// };
 
 function addUser() {
     firstName = document.getElementById("firstName");
     lastName = document.getElementById("lastName");
     dob = document.getElementById("dob");
     updateUser();
-    updateAllUsers();
+    // updateAllUsers();
     hideInputField();
     updateTable();
     // result();

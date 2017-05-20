@@ -1,7 +1,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: auto;
 }
 
 #container {
@@ -12,7 +11,17 @@ html, body {
 }
 
 section{
-    margin: 0 ;
+
+}
+#head, #foot{
+    background: #c6ffbc;
+    color: green;
+    border-radius: 4px;
+    padding:15px;
+}
+
+#bod{
+    margin: 50px 0;
 }
 
 h1, h2{
@@ -25,7 +34,7 @@ body {
 
 table {
     border: 1px solid #f2f2f2;
-    width: 100%;
+    width: 99%;
     margin: 5px;
 }
 
