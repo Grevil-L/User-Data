@@ -5,10 +5,12 @@
 var firstName;
 var lastName;
 var dob;
-var user = {firstName: firstName, lastName: lastName, dob: dob};
-var allUsers = [user];
+// var user = {firstName: firstName, lastName: lastName, dob: dob};
+var user = {};
+// var allUsers = [user];
+var allUsers = [];
 
-function updateUser(){
+function updateUser() {
     user.firstName = firstName;
     user.lastName = lastName;
     user.dob = dob;
@@ -18,7 +20,7 @@ function updateAllUsers() {
     allUsers.push(user);
 };
 
-function addUser(){
+function addUser() {
     firstName = document.getElementById("firstName");
     lastName = document.getElementById("lastName");
     dob = document.getElementById("dob");
@@ -26,10 +28,11 @@ function addUser(){
     updateAllUsers();
     hideInputField();
     updateTable();
+    // result();
 
 };
 
-function updateTable(){
+function updateTable() {
 
     for (i = 0; i < allUsers.length; i++) {
         var table = document.getElementById("userTable");
@@ -45,13 +48,32 @@ function updateTable(){
 
 function showInputField() {
     var inputField = document.getElementById("inputField");
-    inputField.style.display = 'block'
+    inputField.style.display = 'block';
 }
 
 function hideInputField() {
     var inputField = document.getElementById("inputField");
-    inputField.style.display = 'none'
+    inputField.style.display = 'none';
 }
+
+// function result() {
+//     var result = document.getElementById("result");
+//     result.style.display = 'block';
+//     fade(result);
+// }
+//
+// function fade(element) {
+//     var op = 1;  // initial opacity
+//     var timer = setInterval(function () {
+//         if (op <= 0.1) {
+//             clearInterval(timer);
+//             element.style.display = 'none';
+//         }
+//         element.style.opacity = op;
+//         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+//         op -= op * 0.1;
+//     }, 50);
+// }
 
 
 // function myDeleteFunction() {
