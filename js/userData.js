@@ -11,11 +11,12 @@ var dob;
 var allUsers = [];
 
 function updateUser() {
-    var user = {};
+    var user = new Object();
     user.firstName = firstName;
     user.lastName = lastName;
     user.dob = dob;
     allUsers.push(user);
+    document.getElementById("dummy").innerHTML = "Dev";
 };
 
 // function updateAllUsers() {
@@ -23,9 +24,10 @@ function updateUser() {
 // };
 
 function addUser() {
-    firstName = document.getElementById("firstName");
-    lastName = document.getElementById("lastName");
-    dob = document.getElementById("dob");
+    firstName = document.getElementById("firstName").value;
+
+    lastName = document.getElementById("lastName").value;
+    dob = document.getElementById("dob").value;
     updateUser();
     // updateAllUsers();
     hideInputField();
@@ -35,17 +37,18 @@ function addUser() {
 };
 
 function updateTable() {
+    var lastElement = allUsers.length-1;
 
-    for (i = 0; i < allUsers.length; i++) {
+    // for (i = 0; i < allUsers.length; i++) {
         var table = document.getElementById("userTable");
         var row = table.insertRow(-1);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
-        cell1.innerHTML = allUsers[i].firstName;
-        cell2.innerHTML = allUsers[i].lastName;
-        cell3.innerHTML = allUsers[i].dob;
-    }
+        cell1.innerHTML = allUsers[lastElement].firstName;
+        cell2.innerHTML = allUsers[lastElement].lastName;
+        cell3.innerHTML = allUsers[lastElement].dob;
+    // }
 };
 
 function showInputField() {
@@ -58,24 +61,10 @@ function hideInputField() {
     inputField.style.display = 'none';
 }
 
-// function result() {
-//     var result = document.getElementById("result");
-//     result.style.display = 'block';
-//     fade(result);
-// }
-//
-// function fade(element) {
-//     var op = 1;  // initial opacity
-//     var timer = setInterval(function () {
-//         if (op <= 0.1) {
-//             clearInterval(timer);
-//             element.style.display = 'none';
-//         }
-//         element.style.opacity = op;
-//         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-//         op -= op * 0.1;
-//     }, 50);
-// }
+function giveAction() {
+    var dum = document.getElementById("dummy");
+    alert(dum);
+}
 
 
 // function myDeleteFunction() {
