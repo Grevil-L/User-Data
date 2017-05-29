@@ -43,7 +43,14 @@ th, td {
     padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+tr:hover{
+    background-color:#4CAF50;
+    cursor: pointer;
+}
 
 th {
     background-color: #4CAF50;
@@ -72,6 +79,11 @@ input[type=button]{
     padding: 5px 12px;
     float:right;
     margin:10px;
+    width: 90px
+}
+
+input[type=button]:disabled{
+    background-color: red;
 }
 
 footer{

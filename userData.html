@@ -17,13 +17,14 @@
     <section>
         <div id="bod">
         <div>
-            <input type="button" value="Edit" id="edit" onclick="myCreateFunction()"/>
-            <input type="button" value="Add" id="add" onclick="showInputField()"/>
+            <input type="button" value="Delete" id="delete" onclick="deleteUser()" disabled="true"/>
+            <input type="button" value="Edit" id="edit" onclick="showInputField(this)" disabled="true"/>
+            <input type="button" value="Add" id="add" onclick="showInputField(this)"/>
         </div>
 
         <div id="inputField">
             <h2>User Details</h2>
-            <form>
+
                 <fieldset>
                 <legend>First Name</legend>
                 <input type="text" id="firstName" placeholder="First"/>
@@ -37,10 +38,10 @@
                 <input type="text" id="dob" placeholder="mm/dd/yyyy"/>
             </fieldset>
             <fieldset>
-                <input type="button" value="Add User" id="addUserr" onclick="addUser()"/>
+                <input type="button" value="Add User" id="addUser" onclick="addUser(this)"/>
                 <input type="button" value="Cancel" id="cancel" onclick="hideInputField()"/>
             </fieldset>
-            </form>
+
         </div>
         <table id="userTable">
             <tr>
@@ -58,16 +59,20 @@
                 <td>Woods</td>
                 <td>5/6/1995</td>
             </tr>
-            <tr>
+            <tr">
                 <td>Alan</td>
                 <td>Stormfield</td>
                 <td>12/25/1990</td>
             </tr>
         </table>
 
+            <!--<script type="text/javascript">-->
+                <!--function myFunction(x) {-->
+                    <!--alert("Row index is: " + x.rowIndex);-->
+                <!--};-->
+            <!--</script>-->
+
         <p id="dummy">Action Successful</p>
-<!--Dummy Input: <input type="text" id="dummy"/>-->
-            <!--<input type="button" id="give" value="" onclick="giveAction()"/>-->
     </div>
     </section>
     <footer>
