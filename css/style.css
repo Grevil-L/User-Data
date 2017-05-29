@@ -48,7 +48,8 @@ tr:nth-child(even){
 }
 
 tr:hover{
-    background-color:#4CAF50;
+    /*background-color:#4CAF50;*/
+    background-color:orange;
     cursor: pointer;
 }
 
@@ -83,7 +84,8 @@ input[type=button]{
 }
 
 input[type=button]:disabled{
-    background-color: red;
+    background-color: orange;
+    border-color: #ffa214;
 }
 
 footer{
