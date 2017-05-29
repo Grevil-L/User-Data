@@ -69,7 +69,8 @@ fieldset {
     left:35%;
     margin: 0 auto;
     width: 400px;
-    box-shadow: 10px 10px 5px #888888;
+    /*box-shadow: 10px 10px 5px #888888;*/
+    box-shadow: 0 0 20px #000;
 }
 
 input[type=button]{

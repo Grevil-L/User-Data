@@ -125,6 +125,8 @@ function showInputField(x) {
         document.getElementById("addUser").value = "Add User";
     }
     var inputField = document.getElementById("inputField");
+
+    document.getElementById("container").disabled = true;
     inputField.style.display = 'block';
 }
 
