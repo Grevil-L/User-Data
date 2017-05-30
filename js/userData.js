@@ -16,8 +16,8 @@ function updateUser() {
     user.lastName = lastName;
     user.dob = dob;
     allUsers.push(user);
-    document.getElementById("dummy").innerHTML = "Dev";
-};
+    document.getElementById("dummy").innerHTML = "Hello, User";
+}
 
 function addUser(y) {
     if (y.value === "Edit User") {
@@ -37,7 +37,7 @@ function addUser(y) {
         clearInputField();
         selectedRowToInput();
     }
-};
+}
 
 
 function editUser() {
@@ -50,7 +50,7 @@ function editUser() {
     table.rows[rIndex].cells[1].innerHTML = lname;
     table.rows[rIndex].cells[2].innerHTML = dob;
     // }
-};
+}
 
 function selectedRowToInput() {
     for (var i = 1; i < table.rows.length; i++) {
@@ -80,18 +80,6 @@ function selectedRowToInput() {
 }
 selectedRowToInput();
 
-// function editHtmlTbleSelectedRow() {
-//     var fname = document.getElementById("fname").value,
-//         lname = document.getElementById("lname").value,
-//         age = document.getElementById("age").value;
-//     if (!checkEmptyInput()) {
-//         table.rows[rIndex].cells[0].innerHTML = fname;
-//         table.rows[rIndex].cells[1].innerHTML = lname;
-//         table.rows[rIndex].cells[2].innerHTML = age;
-//     }
-// }
-
-
 function updateTable() {
     var lastElement = allUsers.length - 1;
 
@@ -104,10 +92,9 @@ function updateTable() {
     cell1.innerHTML = allUsers[lastElement].firstName;
     cell2.innerHTML = allUsers[lastElement].lastName;
     cell3.innerHTML = allUsers[lastElement].dob;
-    cell1.c
     // row.onclick = editUser(this);
     // }
-};
+}
 
 function deleteUser() {
     table.deleteRow(rIndex);
